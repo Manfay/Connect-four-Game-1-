@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="alap.css" title="normal">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+   
+</head>
+<body>
+    <header id="header">
+        <h1>Connect-four</h1>
+    </header>
+
+    <div id="kezdolap" style="display: block">    
+        <button id="Button1">Játékszabályzat</button>
+        <br>
+        <button id="Button2">Név megadása:</button>
+        <br>
+        <button id="Button3">Mentett játék folytatása</button>
+        <br>
+        <button id="Button4">START</button>
+    </div>
+
+    <div id="szabalyzat" style="display: None">
+        <br>
+        <a>
+            A játék egy 7x6-os függőleges kék táblán játszódik, melynek a tetejéből kell bedobálni mindkét játékosnak a saját színét.
+            A játékosok felülről csúsztatják bele a táblába a saját színeiket –melyek általában piros és sárga korongok-,
+            így a jelrakások lehetőségei is korlátozottak a többi amőba típusú játékhoz képest. Az a játékos nyer, amelyik függőlegesen, vízszintesen,
+            vagy átlósan kirakott négyet a saját színéből.
+        </a>
+    </div>
+
+    <div id="nevek" style="display: None">
+        Első játékos neve: <input type="text" id="player1" >
+        <br>
+        Második játékos neve: <input type="text" id="player2">
+        <br>
+        <button id="Button5">START</button>
+    </div>
+
+    <div id ="game" style="display: None">
+        <h2 id="jatek" style="display: block"></h2>
+        <h2 id="jatek2" style="display: None"></h2>
+        <h1></h1>
+        <h1 id=d style="display: None">DÖNTETLEN</h1>
+        <h1 id=w style="display: None"></h1>
+        <div id="gameboard">
+            <table>
+                <th id="board">
+                    <br>
+                    <table id="tábla" >
+                        <tr id="piros">
+                            <th id="pont">
+                                <div>
+                                    <img id="kep" src="1.png" alt="piros-labda" style="display: None"/>
+                                    <img id="kep10" src="2.png" alt="piros-labda" style="display: None"/>
+                                </div>
+                            </th>
+                            <th id="pont">
+                                <div>
+                                    <img id="kep1" src="1.png" alt="piros-labda" style="display: None"/>
+                                    <img id="kep11" src="2.png" alt="piros-labda" style="display: None"/>
+                                </div>
+                            </th>
+                            <th id="pont">
+                                <div>
+                                    <img id="kep2" src="1.png" alt="piros-labda" style="display: None"/>
+                                    <img id="kep12" src="2.png" alt="piros-labda" style="display: None"/>
+                                </div>
+                            </th>
+                            <th id="pont">
+                                <div><img id="kep3" src="1.png" alt="piros-labda" style="display: none"/>
+                                    <img id="kep13" src="2.png" alt="piros-labda" style="display: None"/>
+                                </div>
+                            </th>
+                            <th id="pont">
+                                <div><img id="kep4" src="1.png" alt="piros-labda" style="display: None"/>
+                                    <img id="kep14" src="2.png" alt="piros-labda" style="display: None"/>
+                                </div>
+                            </th>
+                            <th id="pont">
+                                <div><img id="kep5" src="1.png" alt="piros-labda" style="display: None"/>
+                                    <img id="kep15" src="2.png" alt="piros-labda" style="display: None"/>
+                                </div>
+                            </th>
+                            <th id="pont">
+                                <div><img id="kep6" src="1.png" alt="piros-labda" style="display: None"/>
+                                    <img id="kep16" src="2.png" alt="piros-labda" style="display: None"/>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td id='t61'><div id='td61' class="cella"></div></td>
+                            <td id='t62'><div id='td62' class="cella"></div></td>
+                            <td id='t63'><div id='td63' class="cella"></div></td>
+                            <td id='t64'><div id='td64' class="cella"></div></td>
+                            <td id='t65'><div id='td65' class="cella"></div></td>
+                            <td id='t66'><div id='td66' class="cella"></div></td>
+                            <td id='t67'><div id='td67'  class="cella"></div></td>
+                        </tr>
+                        <tr>
+                            <td id='t51'><div id='td51'  class="cella"></div></td>
+                            <td id='t52'><div id='td52'  class="cella"></div></td>
+                            <td id='t53'><div id='td53'  class="cella"></div></td>
+                            <td id='t54'><div id='td54'  class="cella"></div></td>
+                            <td id='t55'><div id='td55'  class="cella"></div></td>
+                            <td id='t56'><div id='td56'  class="cella"></div></td>
+                            <td id='t57'><div id='td57'  class="cella"></div></td>
+                        </tr>
+                        <tr>
+                            <td id='t41'><div id='td41'  class="cella"></div></td>
+                            <td id='t42'><div id='td42'  class="cella"></div></td>
+                            <td id='t43'><div id='td43'  class="cella"></div></td>
+                            <td id='t44'><div id='td44'  class="cella"></div></td>
+                            <td id='t45'><div id='td45'  class="cella"></div></td>
+                            <td id='t46'><div id='td46'  class="cella"></div></td>
+                            <td id='t47'><div id='td47'  class="cella"></div></td>
+                        </tr>
+                        <tr>
+                            <td id='t31'><div id='td31'  class="cella"></div></td>
+                            <td id='t32'><div id='td32'  class="cella"></div></td>
+                            <td id='t33'><div id='td33'  class="cella"></div></td>
+                            <td id='t34'><div id='td34'  class="cella"></div></td>
+                            <td id='t35'><div id='td35'  class="cella"></div></td>
+                            <td id='t36'><div id='td36'  class="cella"></div></td>
+                            <td id='t37'><div id='td37'  class="cella"></div></td>
+                        </tr>
+                        <tr>
+                            <td id='t21'><div id='td21'  class="cella"></div></td>
+                            <td id='t22'><div id='td22'  class="cella"></div></td>
+                            <td id='t23'><div id='td23'  class="cella"></div></td>
+                            <td id='t24'><div id='td24'  class="cella"></div></td>
+                            <td id='t25'><div id='td25'  class="cella"></div></td>
+                            <td id='t26'><div id='td26'  class="cella"></div></td>
+                            <td id='t27'><div id='td27'  class="cella"></div></td>
+                        </tr>
+                        <tr>
+                            <td id='t11'><div id='td11'  class="cella"></div></td>
+                            <td id='t12'><div id='td12'  class="cella"></div></td>
+                            <td id='t13'><div id='td13'  class="cella"></div></td>
+                            <td id='t14'><div id='td14'  class="cella"></div></td>
+                            <td id='t15'><div id='td15'  class="cella"></div></td>
+                            <td id='t16'><div id='td16'  class="cella"></div></td>
+                            <td id='t17'><div id='td17'  class="cella"></div></td>
+                        </tr>     
+                    </table>
+                    <button id="seged1"> < </button><button id="seged">LERAK</button><button id="seged2"> > </button>
+                </th>
+                <th id="statisztika">
+                    <div id="statisztika2">
+                        <h2 id="egyes"></h2>
+                        <h2 id="kettes"></h2>
+                        <h2 id="dont"></h2>
+                        <br>
+                        <h3 id="korong">0</h3>
+                        <button id="newgame">NEW GAME</button>
+                        <button id="kezdolap2">KEZDŐLAP</button>
+                    </div>
+                </th>
+            </table>
+        </div>
+        
+    </div>
+
+</body>
+<script type="text/javascript" src="script.js"></script>  
+    
+</html>
