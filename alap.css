@@ -1,0 +1,99 @@
+body{
+    text-align:center
+}
+button{
+    margin-top:20px
+}
+div#szabalyzat{
+    width:60%;
+    margin-left:auto;		
+	margin-right:auto;
+    text-align:justify;
+}
+input{
+    margin-top:10px
+}
+table#tábla{
+    width:390px;
+    height:300px;
+    border:1px solid black
+}
+th{
+    width:50px;
+    height:50px;
+    text-align:center;
+    border:1px solid black
+}
+#lebutton{
+    width:50px;
+    height:50px;
+}
+table{
+    margin-left:auto;		
+	margin-right:auto;
+    width:700px;
+    height:500px;
+    
+}
+th>button{
+    width:50px;
+    height:50px;
+}
+button#seged{
+    width:75px;
+    height:30px;
+    margin-left:5px;		
+	margin-right:5px;
+}
+button#seged1{
+    width:75px;
+    height:30px;
+    margin-left:5px;		
+	margin-right:5px;
+}
+button#seged2{
+    width:75px;
+    height:30px;
+    margin-left:5px;		
+	margin-right:5px;
+}
+th#statisztika{
+    width:105px;
+}
+h2#egyes, h2#kettes{
+    text-align:left;
+    margin-left:10px
+}
+th#pont{
+    border:0cm;
+    text-align:center;
+}
+th#pont>div{
+    margin-left:5px;	
+}
+.cella {
+    justify-content: center;
+    align-items: center;
+    background: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 45px;
+    width: 45px;
+    margin-left:2px;
+    background-color: white;
+  }
+.piros{
+    background-color: red;
+}
+.sárga{
+    background-color: yellow;
+}
+.fehér{
+    background-color: white;
+}
+td{
+    border: 1px solid black;
+}
+
+
+
